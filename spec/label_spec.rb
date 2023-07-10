@@ -22,5 +22,10 @@ describe Label do
       @label.add_item('item')
       expect(@label.items.length).to eq(0)
     end
+
+    it 'Adds the label to the item' do
+      @label.add_item(@item)
+      expect(@item.label).to be(@label)
+    end
   end
 end
