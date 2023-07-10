@@ -1,10 +1,15 @@
+require 'date'
+
 class Item
+  attr_accessor :archived, :label
+
   def initialize(genre, author, source, label, publish_date)
-    @id = Random.rand(1..1000)
+    @id = Random.rand(1...1000)
     @genre = genre
     @author = author
     @source = source
     @label = label
+    @label = nil
     @publish_date = Date.parse(publish_date)
     @archived = false
   end
@@ -15,5 +20,9 @@ class Item
 
   def move_to_archive
     @archived = true if can_be_archived?
+  end
+
+  def insert_label(label)
+    @label = label
   end
 end
