@@ -6,7 +6,9 @@ class Main
   end
 
   def display_options
-    array_options = ['List all books', 'List all music albums', 'List of games', 'List all genres', 'List all labels', 'List all authors', 'Add a book', 'Add a music album', 'Add a game']
+    array_options = ['List all books', 'List all music albums', 'List of games',
+                     'List all genres', 'List all labels', 'List all authors', 'Add a book',
+                     'Add a music album', 'Add a game']
     puts 'Be welcomed to cathalog all my things'
     puts 'Please select a valid option'
     puts '-------------------------------'
@@ -19,7 +21,7 @@ class Main
     print user_input
     gets.chomp
   end
-  
+
   def selected_option(chosen)
     options = {
       1 => 'Chosen: 1',
@@ -31,7 +33,7 @@ class Main
       7 => 'Chosen: 7',
       8 => 'Chosen: 8',
       9 => 'Chosen: 9',
-      10 => 'Thank you. Exiting program',
+      10 => 'Thank you. Exiting program'
     }
 
     if options.key?(chosen)
