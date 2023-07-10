@@ -25,4 +25,8 @@ class Item
   def insert_label(label)
     @label = label
   end
+
+  def insert_genre(genre)
+    @genre = genre
+  end
 end
