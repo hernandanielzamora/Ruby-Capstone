@@ -2,10 +2,10 @@ require_relative 'item'
 
 class Book < Item
   attr_accessor :cover_state, :archived
-  attr_reader :publisher, :publish_date
+  attr_reader :publisher, :publish_date, :id
 
-  def initialize(publisher, cover_state, publish_date)
-    super(nil, nil, nil, nil, publish_date)
+  def initialize(publish_date, publisher, cover_state)
+    super(publish_date)
     @id = Random.rand(1...1000)
     @publisher = publisher
     @cover_state = cover_state
