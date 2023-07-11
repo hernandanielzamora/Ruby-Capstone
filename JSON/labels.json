@@ -8,5 +8,10 @@
     "id": 79,
     "title": "Tolkien Book",
     "color": "Green"
+  },
+  {
+    "id": 196,
+    "title": "Harry Potter Book",
+    "color": "White"
   }
 ]
