@@ -44,43 +44,35 @@ class Main
     gets.chomp
   end
 
-  def selected_option(chosen)
-    options = {
-      1 => :list_book,
-      2 => 'option_2',
-      3 => 'option_3',
-      4 => 'option_4',
-      5 => :list_labels,
-      6 => 'option_6',
-      7 => :add_book,
-      8 => 'option_8',
-      9 => 'option_9',
-      10 => :exit_program
-    }
+  # options = For when cases, take this as reference
+  # 1 => :list_book,
+  # 2 => 'option_2',
+  # 3 => 'option_3',
+  # 4 => 'option_4',
+  # 5 => :list_labels,
+  # 6 => 'option_6',
+  # 7 => :add_book,
+  # 8 => 'option_8',
+  # 9 => 'option_9',
+  # 10 => :exit_program
 
+  def selected_option(chosen)
     loop do
-      if options.key?(chosen)
-        method_name = options[chosen]
-  
-        case method_name
-        when :list_book
-          @book_handler.send(method_name)
-          puts ''
-        when :list_labels
-          @label_handler.send(method_name)
-        when :add_book
-          @book_handler.send(method_name, @label_handler)
-        when :exit_program
-          puts 'Thank you. Exiting program'
-          storage_data
-          break
-        else
-          puts "Chosen: #{chosen}"
-        end
+      case chosen
+      when 1
+        @book_handler.list_book
+        puts ''
+      when 5
+        @label_handler.list_labels
+      when 7
+        @book_handler.add_book(@label_handler)
+      when 10
+        puts 'Thank you. Exiting program'
+        storage_data
+        break
       else
         puts 'Invalid option. Please select a number from the menu'
       end
-
       display_options
       chosen = get_input('Select an option:').to_i
     end
