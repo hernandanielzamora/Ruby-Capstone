@@ -65,7 +65,8 @@ class Main
   # 8 => :add_music_album,
   # 9 => 'option_9',
   # 10 => :exit_program
-
+  
+  # rubocop: disable Metrics/CyclomaticComplexity
   def selected_option(chosen)
     loop do
       case chosen
@@ -92,6 +93,7 @@ class Main
       display_options
       chosen = get_input('Select an option:').to_i
     end
+    # rubocop: enable Metrics/CyclomaticComplexity
   end
 end
 
