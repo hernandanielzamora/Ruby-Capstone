@@ -32,7 +32,8 @@ class GamesHandler
         multiplayer = games['multiplayer']
         publish_date = games['publish_date']
         last_played_at = games['last_played_at']
-        puts "#{i + 1}|ID: #{id} - name: #{name} - Cover State: #{multiplayer} - Publish Date: #{publish_date} - Last Played At: #{last_played_at}"
+        puts "#{i + 1}|ID: #{id} - name: #{name} 
+        - Cover State: #{multiplayer} - Publish Date: #{publish_date} - Last Played At: #{last_played_at}"
       end
       puts ''
     end
@@ -41,7 +42,6 @@ class GamesHandler
 
   def add_games(author_handler)
     puts 'Please insert the following information!'
-    puts ''
     print 'Game`s name: '
     games_name = gets.chomp
     print 'Multiplayer game? (true/false): '
