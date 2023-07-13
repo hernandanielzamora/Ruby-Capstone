@@ -76,7 +76,7 @@ class Main
   # 8 => :add_music_album,
   # 9 => 'option_9',
   # 10 => :exit_program
- 
+
   def selected_option(chosen)
     options = {
       1 => { handler: @book_handler, method: :list_book },
@@ -91,7 +91,7 @@ class Main
       10 => :exit_program
     }
 
-  loop do
+    loop do
       if options.key?(chosen)
         option = options[chosen]
         if option == :exit_program
@@ -120,4 +120,3 @@ class Main
 end
 
 Main.new
-

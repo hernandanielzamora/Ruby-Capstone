@@ -27,5 +27,7 @@ describe Book do
     end
     it 'should return false if date is not older than 10 years and cover_state is not bad' do
       book = Book.new('2023/04/05', 'publisher', 'good')
+      expect(book.can_be_archived?).to be_falsy
+    end
   end
 end
