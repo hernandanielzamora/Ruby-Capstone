@@ -1,14 +1,17 @@
 require_relative 'src/handlers/book_handler'
 require_relative 'src/handlers/label_handler'
+require_relative 'src/handlers/games_handler'
 require_relative 'src/handlers/json_handler'
 
 class Main
   def initialize
     @book_handler = BookHandler.new
     @label_handler = LabelHandler.new
+    @games_handler = GamesHandler.new
     @storage = HandleJson.new('./JSON/')
     @book_handler.book_json = @storage.load_from_json('books')
     @label_handler.label_json = @storage.load_from_json('labels')
+    @games_handler.games_json = @storage.load_from_json('games')
     @label_handler.init_labels_list
     puts '----------------------------------------'
     puts 'Be welcomed to cathalog all my things'
@@ -22,9 +25,11 @@ class Main
   def storage_data
     book_json = @book_handler.book_json
     label_json = @label_handler.label_json
+    games_json = @games_handler.games_json
 
     @storage.storage_in_json('books', book_json)
     @storage.storage_in_json('labels', label_json)
+    @storage.storage_in_json('games', games_json)
   end
 
   def display_options
