@@ -24,7 +24,7 @@ class Main
     @genre_handler.init_genres_list
     @author_handler.init_authors_list
     puts '----------------------------------------'
-    puts 'Be welcomed to cathalog all my things'
+    puts 'Be welcomed to catalog all my things'
     puts
     display_options
     chosen = get_input('Select an option: ').to_i
@@ -67,50 +67,16 @@ class Main
 
   # options = For when cases, take this as reference
   # 1 => :list_book,
-  # 2 => 'option_2',
+  # 2 => :list_music_albums,
   # 3 => 'option_3',
-  # 4 => 'option_4',
+  # 4 => :list_genres,
   # 5 => :list_labels,
   # 6 => 'option_6',
   # 7 => :add_book,
-  # 8 => 'option_8',
+  # 8 => :add_music_album,
   # 9 => 'option_9',
   # 10 => :exit_program
-
-  # def selected_option(chosen)
-  #   loop do
-  #     case chosen
-  #     when 1
-  #       @book_handler.list_book
-  #       puts ''
-  #     when 2
-  #       @music_album_handler.list_music_album
-  #     when 3
-  #       @games_handler.list_games
-  #     when 4
-  #       @genre_handler.list_genres
-  #     when 5
-  #       @label_handler.list_labels
-  #     when 6
-  #       @author_handler.list_authors
-  #     when 7
-  #       @book_handler.add_book(@label_handler)
-  #     when 8
-  #       @music_album_handler.add_music_album(@genre_handler)
-  #     when 9
-  #       @games_handler.add_games(@author_handler)
-  #     when 10
-  #       puts 'Thank you. Exiting program'
-  #       storage_data
-  #       break
-  #     else
-  #       puts 'Invalid option. Please select a number from the menu'
-  #     end
-  #     display_options
-  #     chosen = get_input('Select an option:').to_i
-  #   end
-  # end
-
+ 
   def selected_option(chosen)
     options = {
       1 => { handler: @book_handler, method: :list_book },
@@ -125,7 +91,7 @@ class Main
       10 => :exit_program
     }
 
-    loop do
+  loop do
       if options.key?(chosen)
         option = options[chosen]
         if option == :exit_program
@@ -154,3 +120,4 @@ class Main
 end
 
 Main.new
+
