@@ -3,7 +3,7 @@ require_relative '../src/classes/label'
 describe Label do
   before :each do
     @label = Label.new('title', 'color')
-    @item = Item.new(nil, nil, nil, nil, '2020/05/05')
+    @item = Item.new('2020/05/05')
   end
 
   describe '#new' do
