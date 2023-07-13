@@ -61,7 +61,7 @@ Clone this repository to your desired folder:
 `code .`
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 ## 👥 Author: <a name="authors">Hernán Zamora</a>
 
@@ -75,6 +75,11 @@ Clone this repository to your desired folder:
 - Twitter: [@hilaryndzi](https://twitter.com/hilaryndzi)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/nshanji-hilary-ndzi/)
 
+## 👥 Author: <a name="authors">TUMBU BARTHOLOMEW ELAD</a>
+
+- GitHub: [@githubhandle](https://github.com/elad237)
+- Twitter: [@twitterhandle](https://twitter.com/Elad59380989)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumbu-elad-896ab2183/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
