@@ -11,9 +11,14 @@ class MusicAlbum < Item
     @title = title
   end
 
+  def can_be_archived?
+    super || on_spotify?(@on_spotify)
+  end
+
   private
 
-  def can_be_archived?
-    super && on_spotify?
+  def on_spotify?(on_spotify)
+    on_spotify = on_spotify.downcase
+    on_spotify == 'yes'
   end
 end
