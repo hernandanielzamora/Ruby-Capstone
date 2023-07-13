@@ -25,4 +25,8 @@ class Item
   def insert_genre(genre)
     @genre = genre
   end
+
+  def insert_author(author)
+    @author = author
+  end
 end
