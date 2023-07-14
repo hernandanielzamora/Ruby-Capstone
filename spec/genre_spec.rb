@@ -11,4 +11,11 @@ describe Genre do
       expect(@genre).to be_instance_of(Genre)
     end
   end
+
+  describe '#add_item' do
+    it 'Adds a new item to the genre' do
+      @genre.add_item(@item)
+      expect(@genre.name).to include('Thriller')
+    end
+  end
 end

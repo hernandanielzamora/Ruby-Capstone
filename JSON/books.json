@@ -28,5 +28,11 @@
     "publisher": "Hedwig",
     "cover_state": "good",
     "publish_date": "2001-01-01"
+  },
+  {
+    "id": 733,
+    "publisher": "Red",
+    "cover_state": "good",
+    "publish_date": "2005-06-20"
   }
 ]

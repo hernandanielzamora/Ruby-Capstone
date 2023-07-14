@@ -26,4 +26,10 @@ describe MusicAlbum do
       expect(music_album.can_be_archived?).to be_falsy
     end
   end
+
+  describe '#add_item' do
+    it 'Adds a new item to the music album' do
+      expect(@music_album.title).to include('Fullmoon')
+    end
+  end
 end
