@@ -198,6 +198,6 @@ I would like to thank Microverse for teaching me Ruby.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/hernandanielzamora/Ruby-Capstone/blob/develop/LICENSE)https://github.com/hernandanielzamora/Ruby-Capstone/blob/develop/LICENSE licensed.
+This project is [MIT](https://github.com/hernandanielzamora/Ruby-Capstone/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
