@@ -44,7 +44,6 @@ class BookHandler
     book_publisher = gets.chomp
     print 'Cover state: '
     book_cover_state = gets.chomp
-    puts ''
     print 'Publish date (YYYY-MM-DD): '
     book_date = gets.chomp
     # Validate the date format
@@ -53,7 +52,6 @@ class BookHandler
       @book_list.push(book)
       @book_json.push(book_to_json(book))
       label_options.add_label(book)
-      puts 'Book added!'
     else
       puts 'Invalid date format. Please use the format YYYY-MM-DD.'
     end

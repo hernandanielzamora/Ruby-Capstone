@@ -18,5 +18,10 @@
     "id": 475,
     "title": "Books",
     "color": "Yellow"
+  },
+  {
+    "id": 361,
+    "title": "Hedwig Book",
+    "color": "White"
   }
 ]

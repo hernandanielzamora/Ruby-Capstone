@@ -44,7 +44,9 @@ class AuthorHandler
   end
 
   def add_author(item)
+    puts ''
     puts 'Please insert the following data for creating a author: '
+    puts ''
     print 'Author first name: '
     author_first_name = gets.chomp
     print 'Author last name: '
@@ -53,6 +55,8 @@ class AuthorHandler
     @authors_list << author
     @author_json << author_to_json(author)
     author.add_item(item)
+    puts ''
+    puts 'Game added!'
     puts '----------------------------------------'
   end
 end

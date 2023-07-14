@@ -28,7 +28,7 @@ class GamesHandler
       puts ''
       @games_json.each_with_index do |games, i|
         id = games['id']
-        name = games['name']
+        name = games['game_name']
         multiplayer = games['multiplayer']
         publish_date = games['publish_date']
         last_played_at = games['last_played_at']
@@ -37,16 +37,17 @@ class GamesHandler
       puts ''
     end
     puts '----------------------------------------'
+    puts ''
   end
 
   def add_games(author_handler)
+    puts ''
     puts 'Please insert the following information!'
     puts ''
     print 'Game`s name: '
     games_name = gets.chomp
     print 'Multiplayer game? (true/false): '
     games_multiplayer = gets.chomp
-    puts ''
     print 'Publish date (YYYY-MM-DD): '
     games_date = gets.chomp
     print 'Last time you played it? (YYYY-MM-DD): '
@@ -57,7 +58,6 @@ class GamesHandler
       @games_list.push(games)
       @games_json.push(games_to_json(games))
       author_handler.add_author(games)
-      puts 'Game added!'
     else
       puts 'Invalid date format. Please use the format YYYY-MM-DD.'
     end

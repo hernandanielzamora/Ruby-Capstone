@@ -1,1 +1,9 @@
-[{"multiplayer":true,"last_played_at":"2023-02-23"},{"multiplayer":false,"last_played_at":"2023-02-20"}]
+[
+  {
+    "id": 647,
+    "game_name": "LoL",
+    "multiplayer": "true",
+    "publish_date": "2005-05-05",
+    "last_played_at": "2023-02-20"
+  }
+]

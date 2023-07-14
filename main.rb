@@ -48,6 +48,7 @@ class Main
     @storage.storage_in_json('authors', author_json)
   end
 
+  # Display menu methods
   def display_options
     array_options = ['List all books', 'List all music albums', 'List of games',
                      'List all genres', 'List all labels', 'List all authors', 'Add a book',
@@ -60,23 +61,13 @@ class Main
     puts ''
   end
 
+  # Get input methods
   def get_input(user_input)
     print user_input
     gets.chomp
   end
 
-  # options = For when cases, take this as reference
-  # 1 => :list_book,
-  # 2 => :list_music_albums,
-  # 3 => 'option_3',
-  # 4 => :list_genres,
-  # 5 => :list_labels,
-  # 6 => 'option_6',
-  # 7 => :add_book,
-  # 8 => :add_music_album,
-  # 9 => 'option_9',
-  # 10 => :exit_program
-
+  # Selected option methods
   def selected_option(chosen)
     options = {
       1 => { handler: @book_handler, method: :list_book },
@@ -110,6 +101,7 @@ class Main
     end
   end
 
+  # Handle the option chosen
   def handle_option(option)
     handler = option[:handler]
     method = option[:method]
