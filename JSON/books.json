@@ -16,5 +16,17 @@
     "publisher": "Salamandra",
     "cover_state": "bad",
     "publish_date": "2007-06-05"
+  },
+  {
+    "id": 591,
+    "publisher": "Salamandra",
+    "cover_state": "good",
+    "publish_date": "2023-02-02"
+  },
+  {
+    "id": 544,
+    "publisher": "Hedwig",
+    "cover_state": "good",
+    "publish_date": "2001-01-01"
   }
 ]

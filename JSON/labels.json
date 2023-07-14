@@ -13,5 +13,15 @@
     "id": 196,
     "title": "Harry Potter Book",
     "color": "White"
+  },
+  {
+    "id": 475,
+    "title": "Books",
+    "color": "Yellow"
+  },
+  {
+    "id": 361,
+    "title": "Hedwig Book",
+    "color": "White"
   }
 ]
