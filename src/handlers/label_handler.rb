@@ -44,7 +44,9 @@ class LabelHandler
   end
 
   def add_label(item)
-    puts 'Please insert the following data for creating a label: '
+    puts ''
+    puts 'Please insert the following data to create a label: '
+    puts ''
     print 'Label Title: '
     label_title = gets.chomp
     print 'Label Color: '
@@ -53,6 +55,8 @@ class LabelHandler
     @labels_list << label
     @label_json << label_to_json(label)
     label.add_item(item)
+    puts ''
+    puts 'Book added!'
     puts '----------------------------------------'
   end
 end

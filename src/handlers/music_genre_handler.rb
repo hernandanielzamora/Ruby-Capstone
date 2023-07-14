@@ -22,7 +22,9 @@ class MusicAlbumHandler
     if music_album_json.empty?
       puts 'There are no music albums'
     else
+      puts ''
       puts 'Music Albums: '
+      puts ''
       @music_album_json.each_with_index do |music_album, i|
         id = music_album['id']
         on_spotify = music_album['on_spotify']
@@ -30,6 +32,7 @@ class MusicAlbumHandler
         title = music_album['title']
         puts "#{i + 1}|ID: #{id}- Title: #{title}- Published Date: #{publish_date}- On Spotify: #{on_spotify}"
       end
+      puts ''
     end
     puts '-----------------------------------'
   end
@@ -49,7 +52,6 @@ class MusicAlbumHandler
       @music_album_list.push(music_album)
       @music_album_json.push(music_album_to_json(music_album))
       genre_options.add_genre(music_album)
-      puts 'Music Album added!'
     else
       puts 'Invalid date format. Please use the format YYYY-MM-DD.'
     end
@@ -100,12 +102,17 @@ class GenreHandler
   end
 
   def add_genre(item)
+    puts ''
+    puts 'Please enter the genre details'
+    puts ''
     print 'Genre name: '
     genre_name = gets.chomp
     genre = Genre.new(genre_name)
     @genre_list << genre
     @genre_json << genre_to_json(genre)
     genre.add_item(item)
+    puts ''
+    puts 'Music Album added!'
     puts '----------------------------------------'
   end
 end
