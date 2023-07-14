@@ -1,5 +1,5 @@
 CREATE TABLE music_album (
-  id INT,
+  id INT not null generated always as identity,
   title VARCHAR(255),
   published_date DATE
   on_spotify BOOLEAN,
@@ -8,8 +8,8 @@ CREATE TABLE music_album (
 );
 
 CREATE TABLE genre (
-  id INT,
+  id INT not null generated always as identity,
   genre_name VARCHAR(255),
   music_album_id INT,
-  foreign key (music_album_id) references music_album
+  foreign key (music_album_id) references music_album(id)
 );
