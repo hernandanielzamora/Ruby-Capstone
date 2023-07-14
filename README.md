@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -82,6 +83,12 @@ The program is structured according to the UML CLASS DIAGRAM.
 ### Linter Integration:
 
 - Use a linter (e.g., RuboCop) to enforce a consistent coding style and identify potential issues.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Live Demo <a name="live-demo"></a>
+
+You can find the live demo that we did in this [link](https://drive.google.com/file/d/1GwgpWpj2NG3-KfgMXyV_T8f3WZsMy3ju/view?usp=drive_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
