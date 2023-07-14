@@ -9,11 +9,6 @@ describe MusicAlbum do
     it 'Creates a new music album' do
       expect(@music_album).to be_instance_of(MusicAlbum)
     end
-
-    # it 'returns true is music album is on spotify' do
-    #   @music_album.on_spotify = 'Yes'
-    #   expect(@music_album.on_spotify).to eq('Yes')
-    # end
   end
 
   describe '#can_be_archived?' do
